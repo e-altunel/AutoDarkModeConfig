@@ -69,3 +69,8 @@ Component:
           %SYSTEMROOT%\Cursors\W11_light_v2.2,
         ]
       AllowedSources: [Any]
+    - Name: ChangeBrightnessScript
+      Command: %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe
+      ArgsLight: [%APPDATA%\AutoDarkMode\Scripts\changeBrightness.ps1, -b, 100]
+      ArgsDark: [%APPDATA%\AutoDarkMode\Scripts\changeBrightness.ps1, -b, 0]
+      AllowedSources: [Any]
