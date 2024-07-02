@@ -1,0 +1,71 @@
+Enabled: true
+Component:
+  Scripts:
+    - Name: Wallpaper Engine
+      Command: %PROGRAMFILES(x86)%\Steam\steamapps\common\wallpaper_engine\wallpaper32.exe"
+      WorkingDirectory: %APPDATA%\AutoDarkMode
+      ArgsLight:
+        [
+          -control,
+          openWallpaper,
+          -file,
+          %PROGRAMFILES(x86)%\Steam\steamapps\workshop\content\431960\2904925689\project.json,
+        ]
+      ArgsDark:
+        [
+          -control,
+          openWallpaper,
+          -file,
+          %PROGRAMFILES(x86)%\Steam\steamapps\workshop\content\431960\2981249186\project.json,
+        ]
+      AllowedSources: [Any]
+    - Name: Terminal Config
+      Command: python
+      WorkingDirectory: %APPDATA%\AutoDarkMode
+      ArgsLight:
+        [
+          %APPDATA%\AutoDarkMode\Scripts\terminal.py,
+          %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json,
+          false,
+          profiles.defaults.colorScheme,
+          "One Half Light",
+        ]
+      ArgsDark:
+        [
+          %APPDATA%\Roaming\AutoDarkMode\Scripts\terminal.py,
+          %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json,
+          true,
+          profiles.defaults.colorScheme,
+          "One Half Dark",
+        ]
+      AllowedSources: [Any]
+    - Name: PowerShell Text Color
+      Command: python
+      WorkingDirectory: %APPDATA%\AutoDarkMode
+      ArgsLight:
+        [
+          %APPDATA%\AutoDarkMode\Scripts\cp.py,
+          %APPDATA%\AutoDarkMode\Scripts\PowerShell\profile-light.ps1,
+          %USERPROFILE%\Documents\WindowsPowerShell\Profile.ps1,
+        ]
+      ArgsDark:
+        [
+          %APPDATA%\AutoDarkMode\Scripts\cp.py,
+          %APPDATA%\AutoDarkMode\Scripts\PowerShell\profile-dark.ps1,
+          %USERPROFILE%\Documents\WindowsPowerShell\Profile.ps1,
+        ]
+      AllowedSources: [Any]
+    - Name: Change Cursor
+      Command: %USERPROFILE%\System32\WindowsPowerShell\v1.0\powershell.exe
+      WorkingDirectory: %APPDATA%\AutoDarkMode\Scripts
+      ArgsLight: [
+          %APPDATA%\AutoDarkMode\Scripts\cursor.ps1
+          "W11 Cursors Dark Free v2.2 by Jepri Creations",
+          %USERPROFILE%\Cursors\W11_dark_v2.2,
+        ]
+      ArgsDark: [
+          %APPDATA%\AutoDarkMode\Scripts\cursor.ps1
+          "W11 Cursors Light Free v2.2 by Jepri Creations",
+          %USERPROFILE%\Cursors\W11_light_v2.2,
+        ]
+      AllowedSources: [Any]
