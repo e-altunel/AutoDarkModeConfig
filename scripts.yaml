@@ -56,16 +56,16 @@ Component:
         ]
       AllowedSources: [Any]
     - Name: Change Cursor
-      Command: %USERPROFILE%\System32\WindowsPowerShell\v1.0\powershell.exe
+      Command: %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe
       WorkingDirectory: %APPDATA%\AutoDarkMode\Scripts
       ArgsLight: [
           %APPDATA%\AutoDarkMode\Scripts\cursor.ps1
           "W11 Cursors Dark Free v2.2 by Jepri Creations",
-          %USERPROFILE%\Cursors\W11_dark_v2.2,
+          %SYSTEMROOT%\Cursors\W11_dark_v2.2,
         ]
       ArgsDark: [
           %APPDATA%\AutoDarkMode\Scripts\cursor.ps1
           "W11 Cursors Light Free v2.2 by Jepri Creations",
-          %USERPROFILE%\Cursors\W11_light_v2.2,
+          %SYSTEMROOT%\Cursors\W11_light_v2.2,
         ]
       AllowedSources: [Any]
