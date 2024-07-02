@@ -2,21 +2,21 @@ Enabled: true
 Component:
   Scripts:
     - Name: Wallpaper Engine
-      Command: %PROGRAMFILES(x86)%\Steam\steamapps\common\wallpaper_engine\wallpaper32.exe"
+      Command: %PROGRAMFILES(X86)%\Steam\steamapps\common\wallpaper_engine\wallpaper32.exe
       WorkingDirectory: %APPDATA%\AutoDarkMode
       ArgsLight:
         [
           -control,
           openWallpaper,
           -file,
-          %PROGRAMFILES(x86)%\Steam\steamapps\workshop\content\431960\2904925689\project.json,
+          %PROGRAMFILES(X86)%\Steam\steamapps\workshop\content\431960\2904925689\project.json,
         ]
       ArgsDark:
         [
           -control,
           openWallpaper,
           -file,
-          %PROGRAMFILES(x86)%\Steam\steamapps\workshop\content\431960\2981249186\project.json,
+          %PROGRAMFILES(X86)%\Steam\steamapps\workshop\content\431960\2981249186\project.json,
         ]
       AllowedSources: [Any]
     - Name: Terminal Config
@@ -32,7 +32,7 @@ Component:
         ]
       ArgsDark:
         [
-          %APPDATA%\Roaming\AutoDarkMode\Scripts\terminal.py,
+          %APPDATA%\AutoDarkMode\Scripts\terminal.py,
           %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json,
           true,
           profiles.defaults.colorScheme,
