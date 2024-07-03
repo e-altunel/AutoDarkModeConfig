@@ -26,7 +26,7 @@ Component:
         [
           C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
           C:\Users\demir\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json,
-          false,
+          true,
           profiles.defaults.colorScheme,
           "One Half Light",
         ]
