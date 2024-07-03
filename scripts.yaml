@@ -39,6 +39,26 @@ Component:
           "One Half Dark",
         ]
       AllowedSources: [Any]
+    - Name: Translucent Settings
+      Command: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\.venv\Scripts\python.exe
+      WorkingDirectory: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode
+      ArgsLight:
+        [
+          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
+          C:\Users\Emirhan\AppData\Local\Packages\28017CharlesMilette.TranslucentTB_v826wp6bftszj\RoamingState\settings.json,
+          false,
+          maximized_window_appearance.color,
+          "#FFFFFF78",
+        ]
+      ArgsDark:
+        [
+          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
+          C:\Users\Emirhan\AppData\Local\Packages\28017CharlesMilette.TranslucentTB_v826wp6bftszj\RoamingState\settings.json,
+          false,
+          maximized_window_appearance.color,
+          "#00000000",
+        ]
+      AllowedSources: [Any]
     - Name: PowerShell Text Color
       Command: python
       WorkingDirectory: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode
