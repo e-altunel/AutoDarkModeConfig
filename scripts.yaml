@@ -2,58 +2,58 @@ Enabled: true
 Component:
   Scripts:
     - Name: Wallpaper Engine
-      Command: "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\wallpaper32.exe"
-      WorkingDirectory: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode
+      Command: "C:\\Program Files\\Steam\\steamapps\\common\\wallpaper_engine\\wallpaper32.exe"
+      WorkingDirectory: C:\Users\demir\AppData\Roaming\AutoDarkMode
       ArgsLight:
         [
           -control,
           openWallpaper,
           -file,
-          "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\431960\\2904925689\\project.json",
+          "C:\\Program Files\\Steam\\steamapps\\workshop\\content\\431960\\2904925689\\project.json",
         ]
       ArgsDark:
         [
           -control,
           openWallpaper,
           -file,
-          "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\431960\\2981249186\\project.json",
+          "C:\\Program Files\\Steam\\steamapps\\workshop\\content\\431960\\2981249186\\project.json",
         ]
       AllowedSources: [Any]
     - Name: Terminal Config
-      Command: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\.venv\Scripts\python.exe
-      WorkingDirectory: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode
+      Command: C:\Users\demir\AppData\Roaming\AutoDarkMode\.venv\Scripts\python.exe
+      WorkingDirectory: C:\Users\demir\AppData\Roaming\AutoDarkMode
       ArgsLight:
         [
-          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
-          C:\Users\Emirhan\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json,
+          C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
+          C:\Users\demir\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json,
           false,
           profiles.defaults.colorScheme,
           "One Half Light",
         ]
       ArgsDark:
         [
-          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
-          C:\Users\Emirhan\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json,
+          C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
+          C:\Users\demir\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json,
           true,
           profiles.defaults.colorScheme,
           "One Half Dark",
         ]
       AllowedSources: [Any]
     - Name: Translucent Settings
-      Command: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\.venv\Scripts\python.exe
-      WorkingDirectory: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode
+      Command: C:\Users\demir\AppData\Roaming\AutoDarkMode\.venv\Scripts\python.exe
+      WorkingDirectory: C:\Users\demir\AppData\Roaming\AutoDarkMode
       ArgsLight:
         [
-          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
-          C:\Users\Emirhan\AppData\Local\Packages\28017CharlesMilette.TranslucentTB_v826wp6bftszj\RoamingState\settings.json,
+          C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
+          C:\Users\demir\AppData\Local\Packages\28017CharlesMilette.TranslucentTB_v826wp6bftszj\RoamingState\settings.json,
           false,
           maximized_window_appearance.color,
           "#FFFFFF78",
         ]
       ArgsDark:
         [
-          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
-          C:\Users\Emirhan\AppData\Local\Packages\28017CharlesMilette.TranslucentTB_v826wp6bftszj\RoamingState\settings.json,
+          C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
+          C:\Users\demir\AppData\Local\Packages\28017CharlesMilette.TranslucentTB_v826wp6bftszj\RoamingState\settings.json,
           false,
           maximized_window_appearance.color,
           "#00000000",
@@ -61,30 +61,30 @@ Component:
       AllowedSources: [Any]
     - Name: PowerShell Text Color
       Command: python
-      WorkingDirectory: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode
+      WorkingDirectory: C:\Users\demir\AppData\Roaming\AutoDarkMode
       ArgsLight:
         [
-          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\cp.py,
-          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\PowerShell\profile-light.ps1,
-          C:\Users\Emirhan\Documents\WindowsPowerShell\Profile.ps1,
+          C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\cp.py,
+          C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\PowerShell\profile-light.ps1,
+          C:\Users\demir\Documents\WindowsPowerShell\Profile.ps1,
         ]
       ArgsDark:
         [
-          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\cp.py,
-          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\PowerShell\profile-dark.ps1,
-          C:\Users\Emirhan\Documents\WindowsPowerShell\Profile.ps1,
+          C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\cp.py,
+          C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\PowerShell\profile-dark.ps1,
+          C:\Users\demir\Documents\WindowsPowerShell\Profile.ps1,
         ]
       AllowedSources: [Any]
     - Name: Change Cursor
       Command: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-      WorkingDirectory: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts
+      WorkingDirectory: C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts
       ArgsLight: [
-          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\cursor.ps1
+          C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\cursor.ps1
           "W11 Cursors Dark Free v2.2 by Jepri Creations",
           C:\Windows\Cursors\W11_dark_v2.2,
         ]
       ArgsDark: [
-          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\cursor.ps1
+          C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\cursor.ps1
           "W11 Cursors Light Free v2.2 by Jepri Creations",
           C:\Windows\Cursors\W11_light_v2.2,
         ]
@@ -93,13 +93,13 @@ Component:
       Command: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
       ArgsLight:
         [
-          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\changeBrightness.ps1,
+          C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\changeBrightness.ps1,
           -b,
           100,
         ]
       ArgsDark:
         [
-          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\changeBrightness.ps1,
+          C:\Users\demir\AppData\Roaming\AutoDarkMode\Scripts\changeBrightness.ps1,
           -b,
           0,
         ]
