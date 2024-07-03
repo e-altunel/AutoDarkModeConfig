@@ -1,5 +1,6 @@
-import json
+import jstyleson
 import sys
+from json.decoder import JSONDecodeError
 
 
 def main(config_path: str, force: bool, args: list[str]):
@@ -9,9 +10,16 @@ def main(config_path: str, force: bool, args: list[str]):
 
     try:
         with open(config_path, "r", encoding="utf-8") as file:
-            data = json.load(file)
+            data = jstyleson.load(file)
     except FileNotFoundError:
         data = {}
+    except JSONDecodeError:
+        try:
+            with open(config_path, "r", encoding="utf-8-sig") as file:
+                data = jstyleson.load(file)
+        except Exception as e:
+            print(f"Error reading file: {e}")
+            return
 
     for i in range(0, len(args), 2):
         key = args[i].split(".")
@@ -37,7 +45,7 @@ def main(config_path: str, force: bool, args: list[str]):
             continue
         temp[key[-1]] = value
     with open(config_path, "w", encoding="utf-8") as file:
-        json.dump(data, file, indent=4)
+        jstyleson.dump(data, file, indent=4)
 
 
 if __name__ == "__main__":

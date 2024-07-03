@@ -20,7 +20,7 @@ Component:
         ]
       AllowedSources: [Any]
     - Name: Terminal Config
-      Command: python
+      Command: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\.venv\Scripts\python.exe
       WorkingDirectory: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode
       ArgsLight:
         [

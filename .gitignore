@@ -3,3 +3,4 @@ postpone_data.yaml
 update.yaml
 
 *.log
+.venv
