@@ -2,38 +2,38 @@ Enabled: true
 Component:
   Scripts:
     - Name: Wallpaper Engine
-      Command: %PROGRAMFILES(X86)%\Steam\steamapps\common\wallpaper_engine\wallpaper32.exe
-      WorkingDirectory: %APPDATA%\AutoDarkMode
+      Command: "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\wallpaper32.exe"
+      WorkingDirectory: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode
       ArgsLight:
         [
           -control,
           openWallpaper,
           -file,
-          %PROGRAMFILES(X86)%\Steam\steamapps\workshop\content\431960\2904925689\project.json,
+          "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\431960\\2904925689\\project.json",
         ]
       ArgsDark:
         [
           -control,
           openWallpaper,
           -file,
-          %PROGRAMFILES(X86)%\Steam\steamapps\workshop\content\431960\2981249186\project.json,
+          "C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\431960\\2981249186\\project.json",
         ]
       AllowedSources: [Any]
     - Name: Terminal Config
       Command: python
-      WorkingDirectory: %APPDATA%\AutoDarkMode
+      WorkingDirectory: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode
       ArgsLight:
         [
-          %APPDATA%\AutoDarkMode\Scripts\terminal.py,
-          %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json,
+          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
+          C:\Users\Emirhan\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json,
           false,
           profiles.defaults.colorScheme,
           "One Half Light",
         ]
       ArgsDark:
         [
-          %APPDATA%\AutoDarkMode\Scripts\terminal.py,
-          %LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json,
+          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\terminal.py,
+          C:\Users\Emirhan\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json,
           true,
           profiles.defaults.colorScheme,
           "One Half Dark",
@@ -41,36 +41,46 @@ Component:
       AllowedSources: [Any]
     - Name: PowerShell Text Color
       Command: python
-      WorkingDirectory: %APPDATA%\AutoDarkMode
+      WorkingDirectory: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode
       ArgsLight:
         [
-          %APPDATA%\AutoDarkMode\Scripts\cp.py,
-          %APPDATA%\AutoDarkMode\Scripts\PowerShell\profile-light.ps1,
-          %USERPROFILE%\Documents\WindowsPowerShell\Profile.ps1,
+          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\cp.py,
+          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\PowerShell\profile-light.ps1,
+          C:\Users\Emirhan\Documents\WindowsPowerShell\Profile.ps1,
         ]
       ArgsDark:
         [
-          %APPDATA%\AutoDarkMode\Scripts\cp.py,
-          %APPDATA%\AutoDarkMode\Scripts\PowerShell\profile-dark.ps1,
-          %USERPROFILE%\Documents\WindowsPowerShell\Profile.ps1,
+          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\cp.py,
+          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\PowerShell\profile-dark.ps1,
+          C:\Users\Emirhan\Documents\WindowsPowerShell\Profile.ps1,
         ]
       AllowedSources: [Any]
     - Name: Change Cursor
-      Command: %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe
-      WorkingDirectory: %APPDATA%\AutoDarkMode\Scripts
+      Command: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+      WorkingDirectory: C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts
       ArgsLight: [
-          %APPDATA%\AutoDarkMode\Scripts\cursor.ps1
+          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\cursor.ps1
           "W11 Cursors Dark Free v2.2 by Jepri Creations",
-          %SYSTEMROOT%\Cursors\W11_dark_v2.2,
+          C:\Windows\Cursors\W11_dark_v2.2,
         ]
       ArgsDark: [
-          %APPDATA%\AutoDarkMode\Scripts\cursor.ps1
+          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\cursor.ps1
           "W11 Cursors Light Free v2.2 by Jepri Creations",
-          %SYSTEMROOT%\Cursors\W11_light_v2.2,
+          C:\Windows\Cursors\W11_light_v2.2,
         ]
       AllowedSources: [Any]
     - Name: ChangeBrightnessScript
-      Command: %SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe
-      ArgsLight: [%APPDATA%\AutoDarkMode\Scripts\changeBrightness.ps1, -b, 100]
-      ArgsDark: [%APPDATA%\AutoDarkMode\Scripts\changeBrightness.ps1, -b, 0]
+      Command: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+      ArgsLight:
+        [
+          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\changeBrightness.ps1,
+          -b,
+          100,
+        ]
+      ArgsDark:
+        [
+          C:\Users\Emirhan\AppData\Roaming\AutoDarkMode\Scripts\changeBrightness.ps1,
+          -b,
+          0,
+        ]
       AllowedSources: [Any]
